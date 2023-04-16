@@ -1,0 +1,14 @@
+.TH CLIENT 2 "F22 NOVEMBER A3" Linux "User Manuals"
+.SH NAME
+client /- reads and writes with a server
+.SH SYNOPSIS
+.B client
+.I port ip-address
+.SH DESCRIPTION
+.B client
+reads and writes with the server, where it requests a function to be ran by the server using the clients arguments
+.SH EXAMPLES
+.B client
+.I 5555 127.0.0.1
+.SH "SEE ALSO"
+.B server(1)

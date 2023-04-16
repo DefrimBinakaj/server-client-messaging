@@ -1,0 +1,14 @@
+.TH SERVER 1 "F22 NOVEMBER A3" Linux "User Manuals"
+.SH NAME
+server /- sets up a server which reads and writes with clients
+.SH SYNOPSIS
+.B server
+.I port
+.SH DESCRIPTION
+.B server
+receives transactions, processes them, and then waits for following transactions
+.SH EXAMPLES
+.B server
+.I 5555
+.SH "SEE ALSO"
+.B client(2)

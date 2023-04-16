@@ -1,0 +1,66 @@
+to compile the program, simply type
+$ make
+
+to get your current hosts ip-address
+$ hostname -i
+
+to run the server, type
+$ ./server [port]
+
+to run the client, type
+$ ./client [port] [ip-address]
+
+client can be run with an input file
+$ ./client [port] [ip-address] <[input]
+
+pdfs are created of both of the man pages,
+in the names server.pdf and client.pdf
+
+to view the man pages in the terminal, type
+$ groff -Tascii -man [filename]
+
+Note: the man pages for server and client have the naming convention "*.man"
+
+------------------------------------------------------
+
+Acknowledgements:
+
+I did not collaborate with anyone on this assignment.
+
+------------------------------------------------------
+
+Sources:
+
+the following sources greatly helped me structure
+the server-client process
+// https://www.linuxhowtos.org/C_C++/socket.htm?userrate=2
+// https://www.geeksforgeeks.org/socket-programming-in-cc-handling-multiple-clients-on-server-without-multi-threading/
+// https://www.youtube.com/watch?v=Y6pFtgRdUts&list=PL9IEJIKnBJjH_zM5LnovnoaKlXML5qh17&index=8&t=16s
+// https://stackoverflow.com/questions/15673846/how-to-give-to-a-client-specific-ip-address-in-c
+// https://lists.debian.org/debian-hurd/2012/03/msg00020.html
+
+
+the following sources helped me to use epoch time as well
+as convert to the correct format
+// https://www.epochconverter.com/
+// https://techoverflow.net/2021/09/06/how-to-get-time-since-epoch-in-milliseconds-in-c/
+
+
+the following source helped me set a timeout for select
+// https://stackoverflow.com/questions/9494626/c-select-not-waiting-for-timeout-period
+
+
+the following source helped me parse over and print contents of a map
+// https://stackoverflow.com/questions/14555751/how-to-iterate-over-a-c-stl-map-data-structure-using-the-auto-keyword
+
+
+the following was used for finding length of integer when sending to server
+// https://stackoverflow.com/questions/22648978/c-how-to-find-the-length-of-an-integer
+
+
+the following sources were used for writing the man pages
+// https://www.linuxjournal.com/article/1158
+// https://www.systutorials.com/docs/linux/man/7-man/
+// https://unix.stackexchange.com/questions/444767/export-a-man-page-in-pdf
+
+
